@@ -1,7 +1,9 @@
-import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
-import styles from "./page.module.css";
 import { Camera } from "lucide-react";
+import Image, { type ImageProps } from "next/image";
+import { AnimatedBox } from "@/components/AnimatedBox";
+import { Button } from "@/components/ui/button";
+import styles from "./page.module.css";
+
 type Props = Omit<ImageProps, "src"> & {
 	srcLight: string;
 	srcDark: string;
@@ -64,9 +66,8 @@ export default function Home() {
 						Read our docs
 					</a>
 				</div>
-				<Button appName="web" className={styles.secondary}>
-					Open alert
-				</Button>
+				<Button>Test</Button>
+				<AnimatedBox />
 			</main>
 			<footer className={styles.footer}>
 				<a
