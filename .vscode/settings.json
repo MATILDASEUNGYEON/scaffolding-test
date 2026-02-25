@@ -3,10 +3,5 @@
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.biome": "explicit"
-	},
-	"eslint.workingDirectories": [
-		{
-			"mode": "auto"
-		}
-	]
+	}
 }
